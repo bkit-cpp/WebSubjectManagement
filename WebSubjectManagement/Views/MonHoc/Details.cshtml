@@ -1,0 +1,61 @@
+﻿@model WebSubjectManagement.Models.MonHoc
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MonHoc</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MaMH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaMH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenMH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenMH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TCLT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TCLT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TCTH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TCTH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaKhoa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaKhoa)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaMH }, new { @class = "btn btn-primary" }) &nbsp;&nbsp;&nbsp;
+    @Html.ActionLink("Delete", "Delete", new {id=Model.MaMH},new {@class="btn btn-danger"})
+    @Html.ActionLink("Back to List", "Index")
+</p>
